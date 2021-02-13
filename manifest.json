@@ -1,0 +1,28 @@
+{
+
+  "manifest_version": 2,
+  "name": "YT Comment Remover",
+  "version": "1.0",
+
+  "description": "Removes annoying, unfunny, or repetive comments from YouTube",
+  "homepage_url": "https://google.com",
+  "icons": {
+    "48": "icons/YT_Logo"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/image.png",
+    "default_title": "YT Comment Remover",
+    "default_popup": "popup/ytcr.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"]
+    }
+  ]
+}
