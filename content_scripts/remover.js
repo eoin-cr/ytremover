@@ -6,6 +6,8 @@ function remover() {
   window.hasRun = true;
   console.log("Testing testing");
 
+  //alternative to the async command
+
   function removeComments() {
     try{
       const fullComment = document.querySelector('ytd-comment-thread-renderer');
@@ -29,6 +31,8 @@ function remover() {
   //   console.log("Body deleted");
   // };
 
+  //async comment deletion
+
   // async function removeComments() {
   //   const fullComment = await document.querySelector('ytd-comment-thread-renderer');
   //   console.log(fullComment);
@@ -39,14 +43,15 @@ function remover() {
 
 
   // window.addEventListener('DOMContentLoaded', (e) => removeComments());
-  // removeComments();
-  removeBody();
-
+  removeComments();
+  // removeBody();
 };
 
 console.log("Remover bottom text");
 // remover()
 function display() {
-  window.open('https://www.google.com', '_blank');
+  // window.open('https://www.google.com', '_blank');
+  //This code is successfully activated upon the button click and a new tab is opened
+  remover();
   console.log('Button has been clicked')
 }
